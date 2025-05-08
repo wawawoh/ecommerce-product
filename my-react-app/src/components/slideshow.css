@@ -1,0 +1,50 @@
+.image-container {
+    position: relative;
+    cursor: pointer;
+}
+
+.click {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    padding: 0.9rem 1rem;
+    border-radius: 3rem;
+    cursor: pointer;
+    
+}
+.right {
+right: 5%;
+
+}
+.left {
+    left: 5%
+}
+.slideshow-for-desktop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.thumbnail {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    cursor: pointer;
+    
+}
+.light {
+    opacity: 0.5;
+    border: orange solid 3px;
+}
+.normal {
+    opacity: 1;
+    border: none
+}
+@media screen and (min-width:1000px) {
+    img {
+        border-radius: 8%;
+    }
+    
+}
